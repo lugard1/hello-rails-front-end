@@ -92,7 +92,7 @@ Clone this repository to your desired folder:
 - Run rails Back End app on port: 3000
 - [ ] React App Front End do
 - Create .env
-- REACT_APP_API_ENDPOINT=http://127.0.0.1:3000
+- Add to .env file: REACT_APP_API_ENDPOINT=http://127.0.0.1:3000
 - Run React Front End App at different port with: npm start
 
 ### Install <a name="install"></a>
