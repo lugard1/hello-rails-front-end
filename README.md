@@ -64,15 +64,13 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need the following installed in your local system
 
-- Ruby
-- Rails
-- Posgresql
+- React
 - Node.js
 - Yarn
 - Git CLI
 - Github account
 
-Run this command to install **Rails**
+Run this command to install **React**
 
 ```bash
 $ npx create-react-app app-name
