@@ -84,7 +84,7 @@ Clone this repository to your desired folder:
   cd <desired-folder>
   git clone https://github.com/lugard1/hello-rails-front-end.git
 ```
-**Link to database** <br>
+**Set up connection to Back End database** <br>
 - [ ] Rails Back End do
 - Uncomment the block: Rails.application.config.middleware.insert_before 0, Rack::Cors do, in config/initializers/cors.rb
 - Update the origins in config/initializers/cors.rb, with '*'
