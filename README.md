@@ -1,70 +1,169 @@
-# Getting Started with Create React App
+# 📗 Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [📗Table of Contents](#-table-of-contents)
+- [📖Hello Rails Front End](#hello-rails-front-end)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
+  - [💻Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [Author](#author)
+    - [👤**Agu Lugard**](#agu-lugard)
+  - [🔭Future Features](#future-features)
+  - [🤝Contributing](#contributing)
+  - [⭐️Show your support](#support)
+  - [🙏Acknowledgments](#acknowledgements)
+  - [📝License](#license)
 
-## Available Scripts
+<!-- PROJECT DESCRIPTION -->
 
-In the project directory, you can run:
+# 📖 Hello Rails Front End <a name="hello-rails-front-end"></a>
 
-### `npm start`
+**Hello Rails Front End** This project demonstrates the integration of both frontend and backend functionalities using Ruby on Rails and React within a two application system. The application stores the messages in the postgresql database which is retrieved by the front en react app linked to it for the display of random greetings as stored in the backend database, highlighting the seamless interaction between the two applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Built With <a name="built-with"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech Stack <a name="tech-stack"></a>
 
-### `npm test`
+[Back End repository](https://github.com/lugard1/hello-rails-back-end)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>React</li>
+  </ul>
+</details>
 
-### `npm run build`
+<!-- Features -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Features <a name="key-features"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend Addition**
+- **Backend Addition**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+# 🚀 Live Demo <a name="live-demo"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- N/A
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- GETTING STARTED -->
 
-## Learn More
+## 💻 Getting Started<a name="getting-started"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To get a local copy up and running, follow these steps.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites <a name="prerequisites"></a>
 
-### Code Splitting
+In order to run this project you need the following installed in your local system
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React
+- Node.js
+- Yarn
+- Git CLI
+- Github account
 
-### Analyzing the Bundle Size
+Run this command to install **React**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+$ npx create-react-app app-name
+```
 
-### Making a Progressive Web App
+### Setup <a name="setup"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clone this repository to your desired folder:
 
-### Advanced Configuration
+```sh
+  cd <desired-folder>
+  git clone https://github.com/lugard1/hello-rails-front-end.git
+```
+**Set up connection to Back End database** <br>
+- [ ] Rails Back End do
+- Uncomment the block: Rails.application.config.middleware.insert_before 0, Rack::Cors do, in config/initializers/cors.rb
+- Update the origins in config/initializers/cors.rb, with '*'
+- Install gem rack-cors in Gemfile
+- Run rails Back End app on port: 3000
+- [ ] React App Front End do
+- Create .env
+- Add to .env file: REACT_APP_API_ENDPOINT=http://127.0.0.1:3000
+- Run React Front End App at different port with: npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Install <a name="install"></a>
 
-### Deployment
+```sh
+  npx create-react-app hello-rails-front-end
+  cd hello-rails-front-end
+  npm start
+  git init
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+### Usage <a name="usage"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+  npm start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👤Author<a name="author"></a>
+
+### 👤 **Lugard Agu**<a name="agu-lugard"></a>
+
+- GitHub: [@lugard1](https://github.com/lugard1)
+- Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
+- LinkedIn: [@LugardAgu](https://www.linkedin.com/in/lugardagu)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+ 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add button to generate greeting]**
+- [ ] **[Add navigation]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give it a Star!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for providing us learning materials and my peers that assisted in this success, especially Mahabub Alam.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is contributed under [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
